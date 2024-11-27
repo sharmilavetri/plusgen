@@ -84,7 +84,7 @@ console.log(button);
          button[i].onclick =  function(){
             show[i].style.cssText = `display:block;`   
           }
-   }
+    }
 //  ----------------------------------------------------------------
 
 // let btn1 = document.querySelector(".btn1");
