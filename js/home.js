@@ -74,59 +74,39 @@
 
 // ----------------it works--------------------
 
-let show = document.querySelectorAll(".btn_content");
-console.log(show);
+// let show = document.querySelectorAll(".btn_content");
+// console.log(show);
 
-let button = document.querySelectorAll(".button");
-console.log(button);
+// let button = document.querySelectorAll(".button");
+// console.log(button);
 
- for(let i=0; i<show.length; i++){
-         button[i].onclick =  function(){
-            show[i].style.cssText = `display:block;`   
-          }
-    }
-//  ----------------------------------------------------------------
+//  for(let i=0; i<show.length; i++){
+//         //  button[i].onclick =  function(){
+//             show[i].style.cssText = `display:block;`   
+//           }
+//     // }
 
-// let btn1 = document.querySelector(".btn1");
-// console.log(btn1);
-// btn1.onclick = function () {
-//         show[0].style.cssText = `display:block;`
-//         show[5].remove(".btn6")
+function menu(){
+ let menuItem = document.querySelectorAll(".home");
+ for(let list of menuItem){
+    list.style.cssText = `display:block`;
+ }
+ }
+ 
 
-// }
 
-// let btn2 = document.querySelector(".btn2");
-// console.log(btn2);
-// btn2.onclick = function () {
-//         show[0].remove(".btn1")
-//         show[1].style.cssText = `display:block;`
-// }
-
-// let btn3 = document.querySelector(".btn3");
-// console.log(btn3);
-// btn3.onclick = function () {
-//         show[1].remove(".btn2")
-//         show[2].style.cssText = `display:block;`
-// }
-
-// let btn4 = document.querySelector(".btn4");
-// console.log(btn3);
-// btn4.onclick = function () {
-//         show[2].remove(".btn3")
-//         show[3].style.cssText = `display:block;`
-// }
-// let btn5 = document.querySelector(".btn5");
-// console.log(btn3);
-// btn5.onclick = function () {
-//         show[3].remove(".btn4")
-//         show[4].style.cssText = `display:block;`
-// }
-// let btn6 = document.querySelector(".btn6");
-// console.log(btn3);
-// btn6.onclick = function () {
-//         show[4].remove(".btn5")
-//         show[5].style.cssText = `display:block;`
-//         show[0].add(".btn1")
-
-// }
-
+// ----------------j query-----------------------------------------
+$(document).ready(function(){
+  $('.field_btn_collection .tab').on('click', function(){
+    // get the data attribute
+    var tab_id = $(this).attr('data-tab');
+    // remove the default classes
+    $('.field_btn_collection .tab').removeClass('current');   
+    $(this).addClass('current');   
+      
+    $('.tab-content').removeClass('current');    
+    // add new classes on mouse click
+          // "tab-2"
+    $('#'+tab_id).addClass('current');
+  });
+});
