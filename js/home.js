@@ -85,6 +85,7 @@
 //             show[i].style.cssText = `display:block;`   
 //           }
 //     // }
+// --------------------onclick------------------------------------
 
 function menu(){
  let menuItem = document.querySelectorAll(".home");
@@ -96,6 +97,7 @@ function menu(){
 
 
 // ----------------j query-----------------------------------------
+
 $(document).ready(function(){
   $('.field_btn_collection .tab').on('click', function(){
     // get the data attribute
