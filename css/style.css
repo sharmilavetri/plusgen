@@ -4078,7 +4078,7 @@ font-size: 18px;
 
   /* ----------------top 2-------------------- */
   .top2_list button {
-    display: block;
+    display: none;
     background-color: rgba(255, 255, 255, 0.1);
   }
 
@@ -4087,18 +4087,26 @@ font-size: 18px;
   }
 
   .top2_list ul {
-    display: none;
+    display: block;
     list-style-type: none;
-    margin-bottom: 200px;
+    /* margin-bottom: 200px; */
+    margin-top: -45px;
+    background-color: rgba(22, 11, 121, 0.601);
+    border-radius: 10px;
   }
-
+  .top2_list ul li{
+    /* margin-bottom: 10px; */
+    padding: 6px;
+    width: 90px;
+  }
   .top2_list ul li a {
-    height: 30px;
-    color: rgb(179, 25, 25);
-  }
+     height: 30px;
+    color: rgb(244, 243, 247);
+   }
 
   .top2_cart img {
-    margin: -18px -38px 0px -13px;
+    margin: 1px -38px -20px -13px;
+    width:60px;
   }
 
   /* --------------------------------------------------- */
