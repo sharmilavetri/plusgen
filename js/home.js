@@ -118,16 +118,15 @@ $(document).ready(function(){
     $('.allcategories_s2_2 li').removeClass('active')
     $(this).addClass('active');
     let tablet_check = $(this).attr('data-tab');
-    console.log(tablet_check)
+    console.log(tablet_check);
     $('.allcategories_s2_tab1').removeClass('tablet_show');
-    $('#' + tablet_check).addClass('tablet_show');
-
-    
-    let tablet_ch2 = $(this).attr('data-tab1');
-    console.log(tablet_ch2)
-    $('.allcategories_s2_tab1').removeClass('tablet_show');
-    $('#' + tablet_ch2).addClass('tablet_show');
-
+    $('#' + tablet_check).addClass('tablet_show');  
+    // second tablet list 
+    $('.new li').on('click',function(){
+    let tablet_ch2 = $(this).attr('data-tab1'); 
+    console.log(tablet_ch2);
+    $('.allcategories_s2_tab1').removeClass('tablet_show');  
+    $('#' + tablet_ch2).addClass('tablet_show');  
+    })
   })
-
 })

@@ -1868,9 +1868,8 @@ li {
 
   .session2 {
     display: unset;
-  }
-
-  /* .box{
+   }
+   /* .box{
 display: flex;
 gap: 30px;
 margin-top: 0px;
@@ -3843,7 +3842,7 @@ font-size: 18px;
 
   /* --------------------s2------------------------------ */
   .allcategories_session2 {
-    margin-top: 550px;
+    margin-top: 600px;
   }
 
   .allcategories_s2_1 {
@@ -4983,7 +4982,7 @@ font-size: 18px;
   }
 
   .allcategories_session2 {
-    margin-top: 50px;
+    margin-top: -10px;
   }
 
   .allcategories_s2_2 ul {
